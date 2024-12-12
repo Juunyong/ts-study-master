@@ -3,7 +3,7 @@ import './globals.css';
 import { ChakraProvider, extendTheme, ThemeConfig } from '@chakra-ui/react';
 import Header from '@/components/layout/header/Header';
 import { Providers } from '@/components/providers/chakra';
-
+import Link from 'next/link';
 export const metadata: Metadata = {
     title: 'next.js template',
     description: '페이지 설명',
@@ -27,6 +27,12 @@ export const metadata: Metadata = {
     },
 };
 
+const menuItems = [
+    {label : '오늘'}
+    {label : '메뉴'}
+    {label : 'today'}
+    {label : 'today'}
+]
 export default function RootLayout({
     children,
 }: Readonly<{
